@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/${fileBasenameNoExtension}.exe",
+            "args": [],
+            "cwd":"${workspaceFolder}",
+            "stopAtEntry": false,
+            "environment": [],
+            "externalConsole": true,
+            "preLaunchTask": "build",
+            "windows": {
+                "MIMode": "gdb",
+                "miDebuggerPath": "gdb.exe"
+            }
+        },
+        {
+            "name": "Debug-C++",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/${fileBasenameNoExtension}.exe",
+            "args": [],
+            "cwd":"${workspaceFolder}",
+            "stopAtEntry": false,
+            "environment": [],
+            "externalConsole": true,
+            "preLaunchTask": "build-c++",
+            "windows": {
+                "MIMode": "gdb",
+                "miDebuggerPath": "gdb.exe"
+            }
+        }
+        
+    ]
+}

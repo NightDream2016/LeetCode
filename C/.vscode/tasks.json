@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "windows": {
+                "command": "gcc"
+            },
+            "args": [
+                "-g",
+                "${fileBasenameNoExtension}.c",
+                "-o",
+                "${fileBasenameNoExtension}.exe",
+            ]
+        },
+        {
+            "label": "build-c++",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "windows": {
+                "command": "g++"
+            },
+            "args": [
+                "-g",
+                "${fileBasenameNoExtension}.cpp",
+                "-o",
+                "${fileBasenameNoExtension}.exe",
+            ]
+        }
+    ]
+}
