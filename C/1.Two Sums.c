@@ -1,5 +1,5 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include "stdio.h"
+#include "stdlib.h"
 #define HASHTABLE_SIZE 3989
 
 int hash(int value)
@@ -155,7 +155,7 @@ int main(int argc, char ** argv)
     int input2[3] = {4,3,8};
 
     
-
+    int *result = twoSum(input1, 3, 9);
     
     return 0;
 }

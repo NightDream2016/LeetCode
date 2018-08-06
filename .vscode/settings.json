@@ -1,0 +1,20 @@
+{
+    "[cpp]": {
+        "editor.formatOnType": true,
+        "editor.formatOnSave": true,
+        "editor.renderIndentGuides": true,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": true,
+        "editor.tabSize": 4
+    },
+    "clang.cflags": ["-std=c11",
+        "-IC:/Program Files/mingw-w64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/",
+        "-I${workspaceRoot}/include",
+        "-I${cwd}"
+    ],
+    "C_Cpp.clang_format_style": "LLVM",
+    "files.associations": {
+        "string.h": "c"
+    },
+    
+}

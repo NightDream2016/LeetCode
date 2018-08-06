@@ -1,3 +1,5 @@
+
+
 /*
  * [5] Longest Palindromic Substring
  *
@@ -28,6 +30,10 @@
  * 
  * 
  */
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 
 char* longestPalindrome(char* s) 
 {
@@ -110,11 +116,11 @@ char* longestPalindrome(char* s)
 }
 
 
-// int main(int argc, char ** argv)
-// {
+int main(int argc, char ** argv)
+{
 
-//     char *result = longestPalindrome("abcdefgfedcba");
-//     printf("%s", result);
+    char *result = longestPalindrome("abcdefgfedcba");
+    printf("%s", result);
 
-//     return 0;
-// }
+    return 0;
+}

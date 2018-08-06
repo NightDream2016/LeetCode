@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 /*
  * [3] Longest Substring Without Repeating Characters
  *

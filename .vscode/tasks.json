@@ -9,14 +9,29 @@
                 "isDefault": true
             },
             "windows": {
-                "command": "gcc"
+                "command": "gcc",
             },
             "args": [
                 "-g",
-                "${fileBasenameNoExtension}.c",
+                "C/${fileBasenameNoExtension}.c",
                 "-o",
-                "${fileBasenameNoExtension}.exe",
-            ]
+                "C/${fileBasenameNoExtension}.exe",
+            ],
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceRoot}"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error|note):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
         },
         {
             "label": "build-c++",
@@ -33,7 +48,8 @@
                 "${fileBasenameNoExtension}.cpp",
                 "-o",
                 "${fileBasenameNoExtension}.exe",
-            ]
+            ],
+            "problemMatcher": "$gcc"
         }
     ]
 }
