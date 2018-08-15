@@ -1,4 +1,3 @@
-#include <time.h>
 /*
  * [52] N-Queens II
  *
@@ -92,7 +91,6 @@ int getSolutionOfNQueens(   int n,
         {
             // 擺棋子
             rowLocation |= 1 << row;
-            columnLocation |= 1 << column;
             slashLocationSum |= 1 << (row+column);
 
             if (row >= column)
@@ -112,7 +110,6 @@ int getSolutionOfNQueens(   int n,
 
             // 走完所有子樹後要清空目前的變更 (棋子換下一個點擺)
             rowLocation &= ~(1 << row);
-            columnLocation &=  ~(1 << column);
             slashLocationSum &= ~(1 << (row+column));
 
             if (row >= column)
@@ -134,15 +131,7 @@ int getSolutionOfNQueens(   int n,
 
 int totalNQueens(int n) 
 {
-    // rowLocation = (int *)malloc(sizeof(int) * n);
-    // columnLocation = (int *)malloc(sizeof(int) * n);
-    // slashLocationSum = (int *)malloc(sizeof(int) * n * 2);
-    // // Row-Column的方向寫成兩個Array，程式比較好寫:P (雖然開2n用位移的應該也可以啦)
-    // slashLocationDiffRowMinusColumn = (int *)malloc(sizeof(int) * n);
-    // slashLocationDiffColumnMinusRow = (int *)malloc(sizeof(int) * n);
-
     rowLocation = 0;
-    columnLocation = 0;
     slashLocationSum = 0;
     slashLocationDiffColumnMinusRow = 0;
     slashLocationDiffRowMinusColumn = 0;

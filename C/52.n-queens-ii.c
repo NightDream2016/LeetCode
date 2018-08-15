@@ -179,13 +179,13 @@ int totalNQueens(int n)
     return solutionCount;
 }
 
-// int main(int argc, char **argv)
-// {
-//     int n = 14;
-//     int solutionCount = totalNQueens(n);
+int main(int argc, char **argv)
+{
+    int n = 14;
+    int solutionCount = totalNQueens(n);
 
-//     printf("Solution Count Of %d Queen: %d", n , solutionCount);
-//     return 0;
-// }
+    printf("Solution Count Of %d Queen: %d", n , solutionCount);
+    return 0;
+}
 
 

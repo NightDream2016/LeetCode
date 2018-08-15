@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
+#include <string.h>
 /*
  * [51] N-Queens
  *
@@ -293,7 +294,7 @@ char*** solveNQueens(int n, int* returnSize)
 int main(int argc, char **argv)
 {
     int returnSize = 0;
-    int n = 14;
+    int n = 12;
     solveNQueens(n, &returnSize);
 
     return 0;
