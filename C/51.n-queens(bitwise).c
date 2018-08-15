@@ -190,6 +190,7 @@ int isLocationValid(ChessLocation locations)
     return 1;
 }
 
+
 int getSolutionOfNQueens(   int n, 
                             int currentChessIndex,
                             ChessLocation locations[],
@@ -287,6 +288,7 @@ char*** solveNQueens(int n, int* returnSize)
     return solutionArray;
 
 }   
+
 
 int main(int argc, char **argv)
 {
