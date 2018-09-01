@@ -129,12 +129,12 @@ double findMedianSortedArrays(int *nums1, int nums1Size, int *nums2, int nums2Si
     }
 }
 
-// int main(int argc, char const *argv[])
-// {
-//     int nums1[] = {1, 2};
-//     int nums2[] = {1, 2, 3};
+int main(int argc, char const *argv[])
+{
+    int nums1[] = {1, 2};
+    int nums2[] = {1, 2, 3};
 
-//     double result = findMedianSortedArrays(nums1, 2, nums2, 3);
+    double result = findMedianSortedArrays(nums1, 2, nums2, 3);
 
-//     return 0;
-// }
+    return 0;
+}

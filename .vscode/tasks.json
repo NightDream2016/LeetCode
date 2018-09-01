@@ -13,9 +13,9 @@
             },
             "args": [
                 "-g",
-                "C/${fileBasenameNoExtension}.c",
+                "${fileDirname}\\${fileBasenameNoExtension}.c",
                 "-o",
-                "C/${fileBasenameNoExtension}.exe",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
             ],
             "problemMatcher": {
                 "owner": "cpp",
@@ -45,9 +45,9 @@
             },
             "args": [
                 "-g",
-                "${fileBasenameNoExtension}.cpp",
+                "${fileDirname}\\${fileBasenameNoExtension}.cpp",
                 "-o",
-                "${fileBasenameNoExtension}.exe",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
             ],
             "problemMatcher": "$gcc"
         }

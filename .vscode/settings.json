@@ -9,12 +9,17 @@
     },
     "clang.cflags": ["-std=c11",
         "-IC:/Program Files/mingw-w64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/",
-        "-I${workspaceRoot}/include",
-        "-I${cwd}"
     ],
     "C_Cpp.clang_format_style": "LLVM",
     "files.associations": {
-        "string.h": "c"
+        "string.h": "c",
+        "stdio.h": "c",
+        "istream": "c",
+        "ostream": "c",
+        "system_error": "c",
+        "type_traits": "c",
+        "stdlib.h": "c",
+        "conio.h": "c"
     },
     
 }
