@@ -1,13 +1,11 @@
 {
     "configurations": [
         {
-            "name": "MinGW-x64",
+            "name": "Win32",
             "includePath": [
-                "${workspaceFolder}",
-                "C:/Program Files/mingw-w64/mingw64/lib/gcc/x86_64-w64-mingw32/include/",
-                "C:/Program Files/mingw-w64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"
+                "${workspaceFolder}"
             ],
-            "compilerPath": "C:/Program Files/mingw-w64/mingw64/bin/gcc.exe",
+            "compilerPath": "\"C:\\ProgramData\\chocolatey\\bin\\g++.exe\"",
             "cStandard": "c11",
             "cppStandard": "c++17",
             "intelliSenseMode": "clang-x64",
