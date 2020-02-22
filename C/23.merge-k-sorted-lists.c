@@ -1,12 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
 /*
  * [23] Merge k Sorted Lists
  *
  * https://leetcode.com/problems/merge-k-sorted-lists/description/
  *
  * algorithms
- * Hard (29.47%)
- * Total Accepted:    249K
- * Total Submissions: 845K
+ * Hard (29.77%)
+ * Total Accepted:    256.6K
+ * Total Submissions: 861.9K
  * Testcase Example:  '[[1,4,5],[1,3,4],[2,6]]'
  *
  * Merge k sorted linked lists and return it as one sorted list. Analyze and
@@ -32,51 +34,55 @@
  *     struct ListNode *next;
  * };
  */
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
- */
-struct ListNode *mergeTwoList(struct ListNode *list1, struct ListNode *list2)
+struct ListNode 
 {
-    // if (list1 == NULL)
-    // {
-    //     return list2;
-    // }
+    int val;
+    struct ListNode *next;
+};
+typedef struct ListNode LISTNODE;
 
-    // if (list2 == NULL)
-    // {
-    //     return list1;
-    // }
+struct ListNode *mergeList(LISTNODE *listA, LISTNODE *listB)
+{
+    if (listA == NULL && listB == NULL)
+    {
+        return NULL;
+    }
 
-    // struct ListNode *currentList = NULL;
-    // while (list1 != NULL || list2 != NULL)
-    // {
-    //     if (list1 == NULL)
-    //     {
-    //         currentList->next = list2;
-    //     }
+    if (listA == NULL)
+    {
+        return listB;
+    }
+    
+    if (listB == NULL)
+    {
+        return listA;
+    }
 
-    //     if (list2 == NULL)
-    //     {
-    //         currentList->next = list1;
-    //     }
+    LISTNODE *newListHead = NULL;
 
-    //     if (list1->val > list2->val)
-    //     {
+    if (listA->val >= listB->val)
+    {
+        newListHead = listB;
+        listB = listB->next;
+    }
+    else
+    {
+        newListHead = listA;
+        listA = listA->next;
+    }
+    
+    newListHead->next = mergeList(listA, listB);
 
-    //     }
-    // }
+    return newListHead;
 }
 
+struct ListNode* mergeKLists(struct ListNode** lists, int listsSize) 
+{
+    LISTNODE *list = NULL;
+    for (int i = 0; i < listsSize; i++)
+    {
+        list = mergeList(list, lists[i]);
+    }    
 
-struct ListNode* mergeKLists(struct ListNode** lists, int listsSize) {
-    
-}
-
-
-struct ListNode* mergeKLists(struct ListNode** lists, int listsSize) {
-    
+    return list;
 }
