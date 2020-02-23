@@ -2,38 +2,6 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
-            "type": "shell",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "windows": {
-                "command": "gcc",
-            },
-            "args": [
-                "-g",
-                "${fileDirname}\\${fileBasenameNoExtension}.c",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-            ],
-            "problemMatcher": {
-                "owner": "cpp",
-                "fileLocation": [
-                    "relative",
-                    "${workspaceRoot}"
-                ],
-                "pattern": {
-                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error|note):\\s+(.*)$",
-                    "file": 1,
-                    "line": 2,
-                    "column": 3,
-                    "severity": 4,
-                    "message": 5
-                }
-            }
-        },
-        {
             "label": "build-c++",
             "type": "shell",
             "group": {
@@ -45,7 +13,7 @@
             },
             "args": [
                 "-g",
-                "${fileDirname}\\${fileBasenameNoExtension}.cpp",
+                "${file}",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe",
             ],
