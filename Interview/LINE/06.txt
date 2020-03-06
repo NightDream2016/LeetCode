@@ -1,6 +1,0 @@
-（Japanese follows English/ 日本語は下記をご覧ください）
-
-iOS provides different ways to store data in a temporary or persistent way. 
-
-a) Please name the different techniques, methods or frameworks you know of to store data temporary or persistently under iOS and explain their use case briefly. What are their strength and weaknesses?
-b) Where and why would you store an authentication token you received from the server?

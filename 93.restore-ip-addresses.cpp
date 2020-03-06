@@ -1,3 +1,31 @@
+/*
+ * @lc app=leetcode id=93 lang=cpp
+ *
+ * [93] Restore IP Addresses
+ *
+ * https://leetcode.com/problems/restore-ip-addresses/description/
+ *
+ * algorithms
+ * Medium (33.78%)
+ * Likes:    974
+ * Dislikes: 438
+ * Total Accepted:    171.5K
+ * Total Submissions: 507.6K
+ * Testcase Example:  '"25525511135"'
+ *
+ * Given a string containing only digits, restore it by returning all possible
+ * valid IP address combinations.
+ * 
+ * Example:
+ * 
+ * 
+ * Input: "25525511135"
+ * Output: ["255.255.11.135", "255.255.111.35"]
+ * 
+ * 
+ */
+
+// @lc code=start
 #include <algorithm>
 #include <iostream>
 #include <string>
@@ -70,15 +98,17 @@ class Solution
     vector<string> restoreIpAddresses(string s) { return ipAddressResult(s, 0); }
 };
 
-int main(int argc, char *argv[])
-{
-    Solution solution;
+// int main(int argc, char *argv[])
+// {
+//     Solution solution;
 
-    vector<string> solutionResult = solution.restoreIpAddresses("010010");
+//     vector<string> solutionResult = solution.restoreIpAddresses("010010");
 
-    for (string result : solutionResult)
-    {
-	    std::cout << result << std::endl;
-    }
-    return 0;
-}
+//     for (string result : solutionResult)
+//     {
+// 	    std::cout << result << std::endl;
+//     }
+//     return 0;
+// }
+// @lc code=end
+
