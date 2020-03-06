@@ -5,7 +5,7 @@
             "name": "Debug-C/C++",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "program": "${workspaceFolder}\\Build\\${fileBasenameNoExtension}.exe",
             "args": [],
             "cwd":"${workspaceFolder}",
             "stopAtEntry": false,

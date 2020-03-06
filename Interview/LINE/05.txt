@@ -1,0 +1,38 @@
+（Japanese follows English/ 日本語は下記をご覧ください）
+
+The following view controller's deinit method does not get called even when all the external references to this view controller are gone.
+Please explain the problem and what modifications need to be done to the code below so that deinit gets called properly.
+
+---
+class ViewController: UIViewController {
+
+  var completionBlock: ((Data?) -> Void)? = nil
+
+  deinit {
+    print("deinit")
+  }
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+
+    completionBlock = { data in
+      self.process(data: data)
+    }
+  }
+
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+
+    let url = URL(string: "http://localhost:3000/bigdata/")!
+    let dataTask = URLSession.shared.dataTask(with: url) { (data: Data?, _: URLResponse?, _: Error?) -> Void in
+      // long time
+      self.completionBlock?(data)
+    }
+    dataTask.resume()
+  }
+
+  private func process(data: Data?) {
+    print("Processing data...")
+  }
+}
+---

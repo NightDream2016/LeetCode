@@ -15,7 +15,7 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "${workspaceFolder}\\Build\\${fileBasenameNoExtension}.exe",
             ],
             "problemMatcher": "$gcc"
         }
