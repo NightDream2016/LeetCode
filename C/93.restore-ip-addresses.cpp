@@ -98,17 +98,17 @@ class Solution
     vector<string> restoreIpAddresses(string s) { return ipAddressResult(s, 0); }
 };
 
-// int main(int argc, char *argv[])
-// {
-//     Solution solution;
+int main(int argc, char *argv[])
+{
+    Solution solution;
 
-//     vector<string> solutionResult = solution.restoreIpAddresses("010010");
+    vector<string> solutionResult = solution.restoreIpAddresses("010010");
 
-//     for (string result : solutionResult)
-//     {
-// 	    std::cout << result << std::endl;
-//     }
-//     return 0;
-// }
+    for (string result : solutionResult)
+    {
+	    std::cout << result << std::endl;
+    }
+    return 0;
+}
 // @lc code=end
 

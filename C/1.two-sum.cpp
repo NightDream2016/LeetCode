@@ -79,6 +79,9 @@ int main(int argc, char *argv[])
     vector<int> input1 = {3, 2, 4};
     int input2 = 6;
     vector<int> result = solution.twoSum(input1, input2);
+    for (int element : result) {
+        printf ("%d", element);
+    }
     return 0;
 }
 // @lc code=end

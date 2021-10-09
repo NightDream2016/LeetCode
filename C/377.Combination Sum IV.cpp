@@ -95,11 +95,8 @@ class Solution
 
 int main(int argc, char *argv[])
 {
-    vector<int> input = {1, 2, 3};
-
+    vector<int> vectorInput = {1 ,2 ,3};
+    int valueInput = 8;
     Solution solution;
     solution.combine(8, 4);
-    // std::cout << solutionResult << std::endl;
-
-    return 0;
 }

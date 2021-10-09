@@ -7,22 +7,6 @@ using namespace std;
 class Solution
 {
   public:
-    int max(int x, int y)
-    {
-        return x > y ? x : y;
-    }
-
-    int min(int x, int y)
-    {
-        return x < y ? x : y;
-    }
-
-    void swap(int *x, int *y)
-    {
-        int temp = *x;
-        *x = *y;
-        *y = temp;
-    }
 
     int maxProduct(vector<int> &nums)
     {

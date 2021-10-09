@@ -1,10 +1,37 @@
-#include <algorithm>
-#include <iostream>
-#include <string>
-#include <vector>
+/*
+ * @lc app=leetcode id=94 lang=cpp
+ *
+ * [94] Binary Tree Inorder Traversal
+ *
+ * https://leetcode.com/problems/binary-tree-inorder-traversal/description/
+ *
+ * algorithms
+ * Medium (60.92%)
+ * Likes:    2530
+ * Dislikes: 106
+ * Total Accepted:    638.1K
+ * Total Submissions: 1M
+ * Testcase Example:  '[1,null,2,3]'
+ *
+ * Given a binary tree, return the inorder traversal of its nodes' values.
+ * 
+ * Example:
+ * 
+ * 
+ * Input: [1,null,2,3]
+ * ⁠  1
+ * ⁠   \
+ * ⁠    2
+ * ⁠   /
+ * ⁠  3
+ * 
+ * Output: [1,3,2]
+ * 
+ * Follow up: Recursive solution is trivial, could you do it iteratively?
+ * 
+ */
 
-using namespace std;
-
+// @lc code=start
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -45,9 +72,5 @@ public:
         
     }
 };
+// @lc code=end
 
-int main(int argc, char *argv[])
-{
-    Solution solution;
-    return 0;
-}

@@ -1,8 +1,0 @@
-{
-    "files.associations": {
-        "vector": "cpp",
-        "stdlib.h": "c",
-        "stdbool.h": "c",
-        "unordered_set": "cpp"
-    }
-}
